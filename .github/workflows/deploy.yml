@@ -37,8 +37,8 @@ jobs:
           touch dist/.nojekyll
           cd dist
           git init
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "joykanana"
+          git config user.email "kananaaajoy@gmail.com"
           git add -A
           git commit -m "Deploy portfolio build"
           git push --force "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git" HEAD:gh-pages
